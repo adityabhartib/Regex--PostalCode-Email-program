@@ -9,7 +9,7 @@ public class PosatalCode {
     public void checkPostalCode(){
         System.out.println("Enter Postal Code:" );
         String Postalcode =scan.nextLine();
-        Pattern pattern=Pattern.compile("^[a-zA-Z]{1}+[0-9]{6}$");
+        Pattern pattern=Pattern.compile("^[1-9]{3}\\s{0,1}[0-9]{3}$");
         Matcher matcher= pattern.matcher(Postalcode);
         boolean matchFound = matcher.find();
         if (matchFound) {
